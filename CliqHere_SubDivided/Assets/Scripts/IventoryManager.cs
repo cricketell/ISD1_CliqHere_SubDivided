@@ -8,15 +8,20 @@ public class InventoryManager : MonoBehaviour
     // the valve icon in my UI canvas
     public GameObject valveIconUI;
 
+    // the valve icon in my UI canvas
+    public GameObject gunIconUI;
+
     // remembers what I currently have in my pocket
     private bool _hasPipe = false;
     private bool _hasValve = false;
+    private bool _hasGun = false;
 
     void Start()
     {
         // both icons should be hidden at the start
         if (pipeIconUI != null) pipeIconUI.SetActive(false);
         if (valveIconUI != null) valveIconUI.SetActive(false);
+        if (gunIconUI != null) gunIconUI.SetActive(false);
     }
 
     // called when I click on an item in the world
@@ -33,6 +38,12 @@ public class InventoryManager : MonoBehaviour
             _hasValve = true;
             if (valveIconUI != null) valveIconUI.SetActive(true);
         }
+
+        if (itemName == "Gun")
+        {
+            _hasGun = true;
+            if (gunIconUI != null) gunIconUI.SetActive(true);
+        }
     }
 
     // crew room wall checks this before it lets me in
@@ -47,6 +58,12 @@ public class InventoryManager : MonoBehaviour
         return _hasValve;
     }
 
+    // Engine Room checks this before it opens
+    public bool HasGun()
+    {
+        return _hasGun;
+    }
+
     // crew room wall calls this after opening so pipe icon disappears
     public void UsePipe()
     {
@@ -59,5 +76,12 @@ public class InventoryManager : MonoBehaviour
     {
         _hasValve = false;
         if (valveIconUI != null) valveIconUI.SetActive(false);
+    }
+
+    // crew room wall calls this after opening so pipe icon disappears
+    public void UseGun()
+    {
+        _hasGun = false;
+        if (gunIconUI != null) gunIconUI.SetActive(false);
     }
 }
