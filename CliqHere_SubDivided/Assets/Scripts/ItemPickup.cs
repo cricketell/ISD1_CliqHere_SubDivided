@@ -2,18 +2,49 @@ using UnityEngine;
 
 public class ItemPickup : MonoBehaviour
 {
-    // the inventory script that keeps track of what I have
-    public InventoryManager inventoryManager;
 
-    // set this to "Pipe" or "Valve" depending on which item this is
+    public InventoryManager inventoryManager;
     public string itemName = "Pipe";
 
-    void OnMouseDown()
+    void Update()
     {
-        // tell the inventory I picked this up
-        inventoryManager.PickUpItem(itemName);
 
-        // remove the item from the world since I grabbed it
-        gameObject.SetActive(false);
+        if (!Input.GetMouseButtonDown(0)) return;
+
+        Camera cam = Camera.main;
+
+        //if Camera.main is null find any active camera manually
+        if (cam == null)
+        {
+            foreach (Camera c in Camera.allCameras)
+            {
+                if (c.enabled && c.gameObject.activeInHierarchy)
+                {
+                    cam = c;
+                    break;
+                }
+            }
+        }
+
+        if (cam == null) return;
+
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit[] hits = Physics.RaycastAll(ray, 1000f);
+
+        foreach (RaycastHit hit in hits)
+        {
+
+            if (hit.collider.gameObject == gameObject)
+            {
+
+                inventoryManager.PickUpItem(itemName);
+                gameObject.SetActive(false);
+                return;
+
+            }
+
+        }
+
     }
+
 }
