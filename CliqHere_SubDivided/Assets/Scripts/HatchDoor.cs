@@ -11,6 +11,8 @@ public class HatchDoor : MonoBehaviour
     public Camera mainOrbitalCamera;
     public GameObject labRoomWall;
 
+    public GameObject valveAttached;
+
     private MonoBehaviour _orbitController;
 
     private bool _isOpen = false;
@@ -18,6 +20,8 @@ public class HatchDoor : MonoBehaviour
     private float _hintTimer = 0f;
     private float _hintDuration = 5f;
     private bool _hintShowing = false;
+
+    Animator animator;
 
     void Awake()
     {
@@ -35,6 +39,13 @@ public class HatchDoor : MonoBehaviour
 
         if (labRoomCamera != null)
             labRoomCamera.gameObject.SetActive(false);
+
+    }
+
+    void Start()
+    {
+
+        animator = GetComponent<Animator>();
 
     }
 
@@ -70,7 +81,9 @@ public class HatchDoor : MonoBehaviour
 
         }
 
-        OpenHatch();
+        valveAttached.SetActive(true);
+
+        Invoke("HatchAnimation", 0.5f);
 
     }
 
@@ -102,7 +115,6 @@ public class HatchDoor : MonoBehaviour
 
         HideHint();
         inventoryManager.UseValve();
-        gameObject.SetActive(false);
 
         if (labRoomWall != null)
             labRoomWall.SetActive(false);
@@ -127,6 +139,15 @@ public class HatchDoor : MonoBehaviour
             labRoomCamera.tag = "MainCamera";
 
         }
+
+    }
+
+    void HatchAnimation()
+    {
+
+        animator.SetBool("IsOpen", true);
+
+        Invoke("OpenHatch", 3.2f);
 
     }
 
