@@ -6248,7 +6248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   origin: {fileID: 1805766914}
   target: {fileID: 690411368}
-  moveSpd: 10
+  moveSpd: 100
   moving: 0
   deathScreen: {fileID: 1250726607}
 --- !u!1 &1938066320

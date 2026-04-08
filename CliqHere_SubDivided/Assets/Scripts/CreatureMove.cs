@@ -3,30 +3,31 @@ using UnityEngine;
 public class CreatureMove : MonoBehaviour
 {
 
-    public Transform origin; //Creature starting point
-    public Transform target; //Creature target
+    public Transform origin;
+    public Transform target;
     public float moveSpd;
-    public int moving; //forward = 0, back = 1
+    public int moving;
 
-    private Vector3 flip; //flipped local scale X axis
-    private Vector3 original; //original local scale X axis
+    public DeathScreen deathScreen;
 
-    //Animator animator;
+    private Vector3 flip;
+    private Vector3 original;
+    private bool hasKilled = false;
 
     void Start()
     {
 
-        moving = 0; //starts with the Creature moving towards the target
+        moving = 0;
 
-        flip = new Vector3(-1, 1, 1); //setting Vector3 to control the Creature flipping to suit the direction
-        original = new Vector3(1, 1, 1); //original scale
+        flip = new Vector3(-1, 1, 1);
+        original = new Vector3(1, 1, 1);
 
     }
 
     private void OnMouseDown()
     {
 
-        moving = 1; //sends Creature back to origin
+        moving = 1;
 
     }
 
@@ -36,32 +37,38 @@ public class CreatureMove : MonoBehaviour
         if (moving == 0)
         {
 
-            //Moves the Creature towards the target point at the set movement speed
             transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpd * Time.deltaTime);
-            //Sets the local scale of the Creature to the original as it's moving forward 
             transform.localScale = original;
 
         }
         else if (moving == 1)
         {
 
-            //Moves the Creature towards the origin point at the set movement speed
             transform.position = Vector3.MoveTowards(transform.position, origin.position, moveSpd * Time.deltaTime);
-            //Sets the local scale of the Creature to the be flipped on the X axis as it's moving backwards 
             transform.localScale = flip;
 
         }
 
+        //when the creature reaches the target it shows the death screen
+        if (moving == 0 && !hasKilled && transform.position == target.position)
+        {
+
+            hasKilled = true;
+            deathScreen.ShowDeathScreen();
+
+        }
+
+        //resets once the creature is back at origin so it can trigger again
         if (transform.position == origin.position)
         {
 
-            //Makes the Creature start moving towards the target once it's reached the origin point
+            hasKilled = false;
             moving = 0;
 
         }
+
     }
 
 }
 
 //Video referenced: https://youtu.be/_UzRw_5xqxg?si=2iAwBgJji755ftRH
-
