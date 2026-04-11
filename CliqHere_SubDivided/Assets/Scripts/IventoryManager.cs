@@ -8,13 +8,17 @@ public class InventoryManager : MonoBehaviour
     // the valve icon in my UI canvas
     public GameObject valveIconUI;
 
-    // the valve icon in my UI canvas
+    // the gun icon in my UI canvas
     public GameObject gunIconUI;
+
+    // the key icon in my UI canvas
+    public GameObject keyIconUI;
 
     // remembers what I currently have in my pocket
     private bool _hasPipe = false;
     private bool _hasValve = false;
     private bool _hasGun = false;
+    private bool _hasKey = false;
 
     void Start()
     {
@@ -22,6 +26,7 @@ public class InventoryManager : MonoBehaviour
         if (pipeIconUI != null) pipeIconUI.SetActive(false);
         if (valveIconUI != null) valveIconUI.SetActive(false);
         if (gunIconUI != null) gunIconUI.SetActive(false);
+        if (keyIconUI != null) keyIconUI.SetActive(false);
     }
 
     // called when I click on an item in the world
@@ -44,6 +49,12 @@ public class InventoryManager : MonoBehaviour
             _hasGun = true;
             if (gunIconUI != null) gunIconUI.SetActive(true);
         }
+
+        if (itemName == "Key")
+        {
+            _hasKey = true;
+            if (keyIconUI != null) keyIconUI.SetActive(true);
+        }
     }
 
     // crew room wall checks this before it lets me in
@@ -64,6 +75,12 @@ public class InventoryManager : MonoBehaviour
         return _hasGun;
     }
 
+    // Bridge Room checks this before it opens
+    public bool HasKey()
+    {
+        return _hasKey;
+    }
+
     // crew room wall calls this after opening so pipe icon disappears
     public void UsePipe()
     {
@@ -78,10 +95,17 @@ public class InventoryManager : MonoBehaviour
         if (valveIconUI != null) valveIconUI.SetActive(false);
     }
 
-    // crew room wall calls this after opening so pipe icon disappears
+    // engine room wall calls this after opening so gun icon disappears
     public void UseGun()
     {
         _hasGun = false;
         if (gunIconUI != null) gunIconUI.SetActive(false);
+    }
+
+    // bridge calls this after opening so key icon disappears
+    public void UseKey()
+    {
+        _hasKey = false;
+        if (keyIconUI != null) keyIconUI.SetActive(false);
     }
 }
