@@ -147,7 +147,7 @@ public class HatchDoor : MonoBehaviour
 
         animator.SetBool("IsOpen", true);
 
-        Invoke("OpenHatch", 3.2f);
+        Invoke("OpenHatch", 3f);
 
     }
 

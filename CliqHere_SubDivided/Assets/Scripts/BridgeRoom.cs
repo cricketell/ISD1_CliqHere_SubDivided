@@ -138,7 +138,7 @@ public class BridgeRoom : MonoBehaviour
 
         animator.SetBool("IsOpen", true);
 
-        Invoke("OpenHatch", 1.5f);
+        Invoke("OpenHatch", 2.1f);
 
     }
 }
