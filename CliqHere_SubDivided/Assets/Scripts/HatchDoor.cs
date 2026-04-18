@@ -4,6 +4,10 @@ public class HatchDoor : MonoBehaviour
 {
 
     public InventoryManager inventoryManager;
+    
+    public RoomInspector roomInspector;
+    public GameObject crewRoomText;
+    public GameObject labText;
 
     public GameObject needValveUI;
 
@@ -115,6 +119,11 @@ public class HatchDoor : MonoBehaviour
 
         HideHint();
         inventoryManager.UseValve();
+
+        crewRoomText.SetActive(false);
+        labText.SetActive(true);
+
+        roomInspector.roomNameTextObject = labText;
 
         if (labRoomWall != null)
             labRoomWall.SetActive(false);

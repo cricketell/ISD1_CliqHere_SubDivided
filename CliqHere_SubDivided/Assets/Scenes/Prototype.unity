@@ -1287,7 +1287,7 @@ Transform:
   m_GameObject: {fileID: 410641850}
   serializedVersion: 2
   m_LocalRotation: {x: 0.006962592, y: 0.62914664, z: -0.09447952, w: 0.7714919}
-  m_LocalPosition: {x: -734.41, y: -349.84, z: -67.8}
+  m_LocalPosition: {x: -734.14, y: -350.04, z: -69.19}
   m_LocalScale: {x: 1, y: 19.56, z: 15.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2432,6 +2432,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryManager: {fileID: 1377197919}
+  roomInspector: {fileID: 0}
+  crewRoomText: {fileID: 0}
+  labText: {fileID: 0}
   needValveUI: {fileID: 271488700}
   labRoomCamera: {fileID: 796010526}
   mainOrbitalCamera: {fileID: 2019176129}
@@ -3297,7 +3300,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1012953779
 Transform:
   m_ObjectHideFlags: 0
@@ -5235,6 +5238,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryManager: {fileID: 1377197919}
+  roomInspector: {fileID: 404691581}
+  crewRoomText: {fileID: 845084659}
+  bridgeText: {fileID: 1290200543}
+  escText: {fileID: 781776358}
   bridgeRoomCamera: {fileID: 47411015}
   mainOrbitalCamera: {fileID: 2019176129}
 --- !u!1 &1571709350
@@ -5291,7 +5298,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.14, y: 1.16, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1571709354
 MeshRenderer:
@@ -8390,6 +8397,10 @@ PrefabInstance:
       value: 106.326
       objectReference: {fileID: 0}
     - target: {fileID: 3302687683690585833, guid: 891619d8a5c057149b86ff47f792a11f, type: 3}
+      propertyPath: labText
+      value: 
+      objectReference: {fileID: 428377164}
+    - target: {fileID: 3302687683690585833, guid: 891619d8a5c057149b86ff47f792a11f, type: 3}
       propertyPath: labRoomWall
       value: 
       objectReference: {fileID: 1542514466}
@@ -8398,9 +8409,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 271488700}
     - target: {fileID: 3302687683690585833, guid: 891619d8a5c057149b86ff47f792a11f, type: 3}
+      propertyPath: crewRoomText
+      value: 
+      objectReference: {fileID: 845084659}
+    - target: {fileID: 3302687683690585833, guid: 891619d8a5c057149b86ff47f792a11f, type: 3}
       propertyPath: labRoomCamera
       value: 
       objectReference: {fileID: 796010526}
+    - target: {fileID: 3302687683690585833, guid: 891619d8a5c057149b86ff47f792a11f, type: 3}
+      propertyPath: roomInspector
+      value: 
+      objectReference: {fileID: 404691581}
     - target: {fileID: 3302687683690585833, guid: 891619d8a5c057149b86ff47f792a11f, type: 3}
       propertyPath: inventoryManager
       value: 

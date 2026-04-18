@@ -50,7 +50,7 @@ public class RoomInspector : MonoBehaviour
 
         if (!_isInspecting) return;
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if ((roomName != "Bridge") && Input.GetKeyDown(KeyCode.Escape))
             ExitRoom();
 
     }

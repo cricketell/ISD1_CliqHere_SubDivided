@@ -4,6 +4,11 @@ public class BridgeRoom : MonoBehaviour
 {
     public InventoryManager inventoryManager;
 
+    public RoomInspector roomInspector;
+    public GameObject crewRoomText;
+    public GameObject bridgeText;
+    public GameObject escText;
+
     //public GameObject needValveUI;
 
     public Camera bridgeRoomCamera;
@@ -109,6 +114,12 @@ public class BridgeRoom : MonoBehaviour
 
         //HideHint();
         inventoryManager.UseKey();
+
+        roomInspector.roomName = "Bridge";
+
+        crewRoomText.SetActive(false);
+        bridgeText.SetActive(true);
+        escText.SetActive(false);
 
         if (_orbitController != null) _orbitController.enabled = false;
 
