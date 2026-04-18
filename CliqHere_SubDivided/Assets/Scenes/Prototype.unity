@@ -5239,7 +5239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryManager: {fileID: 1377197919}
   roomInspector: {fileID: 404691581}
-  crewRoomText: {fileID: 845084659}
+  crewRoomText: {fileID: 428377164}
   bridgeText: {fileID: 1290200543}
   escText: {fileID: 781776358}
   bridgeRoomCamera: {fileID: 47411015}
