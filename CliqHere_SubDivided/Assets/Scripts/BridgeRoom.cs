@@ -9,7 +9,7 @@ public class BridgeRoom : MonoBehaviour
     public GameObject bridgeText;
     public GameObject escText;
 
-    //public GameObject needValveUI;
+    public GameObject needKeyUI; // Assign your "Need a Key" hint UI in the Inspector
 
     public Camera bridgeRoomCamera;
     public Camera mainOrbitalCamera;
@@ -53,7 +53,7 @@ public class BridgeRoom : MonoBehaviour
     void Update()
     {
 
-        /*if (_hintShowing)
+        if (_hintShowing)
         {
 
             _hintTimer += Time.deltaTime;
@@ -65,7 +65,7 @@ public class BridgeRoom : MonoBehaviour
 
             }
 
-        }*/
+        }
 
     }
 
@@ -77,7 +77,7 @@ public class BridgeRoom : MonoBehaviour
         if (!inventoryManager.HasKey())
         {
 
-            //ShowHint();
+            ShowHint();
             return;
 
         }
@@ -86,33 +86,33 @@ public class BridgeRoom : MonoBehaviour
 
     }
 
-    /*public void HideHint()
+    public void HideHint()
     {
 
-        if (needValveUI != null) needValveUI.SetActive(false);
+        if (needKeyUI != null) needKeyUI.SetActive(false);
         _hintShowing = false;
         _hintTimer = 0f;
 
-    }*/
+    }
 
-    /*void ShowHint()
+    void ShowHint()
     {
 
         HintManager.HideAll();
 
-        if (needValveUI != null) needValveUI.SetActive(true);
+        if (needKeyUI != null) needKeyUI.SetActive(true);
         _hintShowing = true;
         _hintTimer = 0f;
-        HintManager.Register(this);
+        HintManager.Register(this); // requires HintManager to support BridgeRoom — see note below
 
-    }*/
+    }
 
     void OpenHatch()
     {
 
         _isOpen = true;
 
-        //HideHint();
+        HideHint();
         inventoryManager.UseKey();
 
         roomInspector.roomName = "Bridge";

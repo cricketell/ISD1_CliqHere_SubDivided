@@ -7,6 +7,7 @@ public static class HintManager
     private static CrewRoomWall _crewHint;
     private static HatchDoor _hatchHint;
     private static EngineRoomWall _engineHint;
+    private static BridgeRoom _bridgeHint;
 
     public static void Register(CrewRoomWall wall)
     {
@@ -32,16 +33,26 @@ public static class HintManager
 
     }
 
+    public static void Register(BridgeRoom bridge)
+    {
+
+        HideAll();
+        _bridgeHint = bridge;
+
+    }
+
     public static void HideAll()
     {
 
         if (_crewHint != null) _crewHint.HideHint();
         if (_hatchHint != null) _hatchHint.HideHint();
         if (_engineHint != null) _engineHint.HideHint();
+        if (_bridgeHint != null) _bridgeHint.HideHint();
 
         _crewHint = null;
         _hatchHint = null;
         _engineHint = null;
+        _bridgeHint = null;
 
     }
 
