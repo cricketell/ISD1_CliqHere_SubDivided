@@ -50,6 +50,9 @@ public class RoomInspector : MonoBehaviour
 
         if (!_isInspecting) return;
 
+        // If a note is open ESC closes the note not the room
+        if (ReadableNote.IsNoteOpen) return;
+
         if ((roomName != "Bridge") && Input.GetKeyDown(KeyCode.Escape))
             ExitRoom();
 

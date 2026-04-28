@@ -582,6 +582,142 @@ MonoBehaviour:
   surfaceText: {fileID: 991789960}
   fadeInSpeed: 0.5
   maxRedAlpha: 0.876
+--- !u!1 &71781801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 71781802}
+  - component: {fileID: 71781804}
+  - component: {fileID: 71781803}
+  m_Layer: 5
+  m_Name: EnterHint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &71781802
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71781801}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 704764224}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 222, y: 244}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &71781803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71781801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\"Enter\" to close\n "
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 14
+  m_fontSizeBase: 14
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &71781804
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71781801}
+  m_CullTransparentMesh: 1
 --- !u!1 &90784153
 GameObject:
   m_ObjectHideFlags: 0
@@ -2189,6 +2325,142 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!1 &299820755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 299820756}
+  - component: {fileID: 299820758}
+  - component: {fileID: 299820757}
+  m_Layer: 5
+  m_Name: NoteText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &299820756
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299820755}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 704764224}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 398.21, y: 498.1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &299820757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299820755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 20
+  m_fontSizeBase: 20
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &299820758
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299820755}
+  m_CullTransparentMesh: 1
 --- !u!1 &322610513
 GameObject:
   m_ObjectHideFlags: 0
@@ -4326,6 +4598,8 @@ GameObject:
   - component: {fileID: 543056992}
   - component: {fileID: 543056994}
   - component: {fileID: 543056993}
+  - component: {fileID: 543056996}
+  - component: {fileID: 543056995}
   m_Layer: 0
   m_Name: Notes003 (1)
   m_TagString: Untagged
@@ -4401,6 +4675,51 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543056991}
   m_Mesh: {fileID: -3493450891131755634, guid: d8e4c34110a9de343befb2c39a37d26b, type: 3}
+--- !u!65 &543056995
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543056991}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.998364, y: 10.768046, z: 0.57667714}
+  m_Center: {x: -0.00000383291, y: -0.000007649884, z: 0.15277845}
+--- !u!114 &543056996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543056991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bbe0ab7c265fb44dbe423a182d43e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteText: "The Creature seemed to be growing at a steady rate, all according to
+    the plan, and I\ndon\u2019t know if it\u2019s just the isolation getting to me
+    but I feel like it\u2019s increasing in size more\nrapidly... No one else has
+    commented on this, so I could just be seeing things \u2013 but I\nknow for sure,
+    that tank can only hold so much.\nb) It\u2019s certain. The Creature has started
+    growing too quickly. We\u2019re too disjointed to do\nanything about it, no one\u2019s
+    listening to each other anymore! We designed it to be\npowerful, the most powerful,
+    so if it\u2019s getting larger, I can only fear the worst \u2013 it's\ngetting
+    stronger too."
+  notePanel: {fileID: 704764223}
+  noteTextUI: {fileID: 299820757}
+  escHintText: {fileID: 71781803}
 --- !u!1001 &545465396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5691,6 +6010,83 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 694285039}
   m_Mesh: {fileID: -8342707387534262118, guid: 571edbe910e602f41888c2397369bc75, type: 3}
+--- !u!1 &704764223
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 704764224}
+  - component: {fileID: 704764226}
+  - component: {fileID: 704764225}
+  m_Layer: 5
+  m_Name: NotesPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &704764224
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704764223}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 299820756}
+  - {fileID: 71781802}
+  m_Father: {fileID: 1389892221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -813, y: -453}
+  m_SizeDelta: {x: 400, y: 500}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &704764225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704764223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &704764226
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704764223}
+  m_CullTransparentMesh: 1
 --- !u!1 &724404620
 GameObject:
   m_ObjectHideFlags: 0
@@ -7020,6 +7416,7 @@ Transform:
   - {fileID: 575138933}
   - {fileID: 1250726603}
   - {fileID: 690344246}
+  - {fileID: 1389892221}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &888451188
@@ -9616,7 +10013,19 @@ PrefabInstance:
     - {fileID: -2268880910763465536, guid: d8e4c34110a9de343befb2c39a37d26b, type: 3}
     - {fileID: 3443687365207984017, guid: d8e4c34110a9de343befb2c39a37d26b, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3405147450389618957, guid: d8e4c34110a9de343befb2c39a37d26b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1506107216}
+    - targetCorrespondingSourceObject: {fileID: 3405147450389618957, guid: d8e4c34110a9de343befb2c39a37d26b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1506107219}
+    - targetCorrespondingSourceObject: {fileID: -4628909190213162675, guid: d8e4c34110a9de343befb2c39a37d26b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2122287354}
+    - targetCorrespondingSourceObject: {fileID: -4628909190213162675, guid: d8e4c34110a9de343befb2c39a37d26b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2122287353}
   m_SourcePrefab: {fileID: 100100000, guid: d8e4c34110a9de343befb2c39a37d26b, type: 3}
 --- !u!4 &1093799789 stripped
 Transform:
@@ -11295,6 +11704,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8487167654232718067, guid: 1ac7e1e218713a648961e6ca1933d9c9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1244714078}
+    - targetCorrespondingSourceObject: {fileID: -2268880910763465536, guid: 1ac7e1e218713a648961e6ca1933d9c9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1925896659}
+    - targetCorrespondingSourceObject: {fileID: -2268880910763465536, guid: 1ac7e1e218713a648961e6ca1933d9c9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1925896658}
   m_SourcePrefab: {fileID: 100100000, guid: 1ac7e1e218713a648961e6ca1933d9c9, type: 3}
 --- !u!4 &1244714075 stripped
 Transform:
@@ -13592,6 +14007,8 @@ GameObject:
   - component: {fileID: 1353215235}
   - component: {fileID: 1353215237}
   - component: {fileID: 1353215236}
+  - component: {fileID: 1353215239}
+  - component: {fileID: 1353215238}
   m_Layer: 0
   m_Name: Notes001 (1)
   m_TagString: Untagged
@@ -13667,6 +14084,51 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353215234}
   m_Mesh: {fileID: -885999306981678573, guid: d8e4c34110a9de343befb2c39a37d26b, type: 3}
+--- !u!114 &1353215238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353215234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bbe0ab7c265fb44dbe423a182d43e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteText: "We\u2019ve already been frightened about that THING and now I hear someone
+    harping on\nabout it getting BIGGER?! We hadn\u2019t planned for this. Or rather,
+    we DID plan for this but\nnot this quickly. And we\u2019re supposed to be the
+    scientists. We shouldn\u2019t\u2019ve started this\nwhole thing in the first
+    place!! I can\u2019t take it anymore. Surrounded by these people who\nstill think
+    what we\u2019re doing is right?? We wanted to create the so called \u2018ultimate
+    life\nform\u2019 whatever that means... But we\u2019re just gonna end up losing
+    our own lives! Calling it\nnow whilst I\u2019m still sane enough to even consider
+    the morality of this whole wreck.\nWho do we think we are PLAYING GOD??"
+  notePanel: {fileID: 704764223}
+  noteTextUI: {fileID: 299820757}
+  escHintText: {fileID: 71781803}
+--- !u!65 &1353215239
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353215234}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.9983597, y: 10.768044, z: 0.5766764}
+  m_Center: {x: 0.000007648746, y: 0.000030513025, z: 0.1527785}
 --- !u!1 &1356138926
 GameObject:
   m_ObjectHideFlags: 0
@@ -14052,6 +14514,108 @@ MonoBehaviour:
   valveIconUI: {fileID: 1914685824}
   gunIconUI: {fileID: 165791325}
   keyIconUI: {fileID: 376718318}
+--- !u!1 &1389892220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1389892221}
+  - component: {fileID: 1389892224}
+  - component: {fileID: 1389892223}
+  - component: {fileID: 1389892222}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1389892221
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389892220}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 704764224}
+  m_Father: {fileID: 877210592}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &1389892222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389892220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1389892223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389892220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1389892224
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389892220}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &1425278277
 GameObject:
   m_ObjectHideFlags: 0
@@ -14242,6 +14806,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a0b2229aa3c39488a69575e7eb0b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1506107214 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3405147450389618957, guid: d8e4c34110a9de343befb2c39a37d26b, type: 3}
+  m_PrefabInstance: {fileID: 1093799788}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1506107216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506107214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bbe0ab7c265fb44dbe423a182d43e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteText: "want to get out. Everyone\u2019s getting on at each other, me included.
+    We\u2019ve been\ncouped up in this godforsaken submarine for far too long, and
+    now we have to share\nwith that too!? I want it gone. I want this whole mission
+    gone. It\u2019s not worth it...\nEveryone here is a bunch of frauds. We signed
+    up for this mission and I\u2019ll be damned\nif we don\u2019t finish it. We knew
+    what we were getting into, why back out now??\nForming a mini resistance are
+    you kidding me?? We\u2019re THIS close to fulfilling our\nduty and NOW you wanna
+    stop?! I\u2019ll keep going. If no one else will I\u2019ll be the one to\nmake
+    sure this Creature \u2013 My Creature \u2013 is a success."
+  notePanel: {fileID: 704764223}
+  noteTextUI: {fileID: 299820757}
+  escHintText: {fileID: 71781803}
+--- !u!65 &1506107219
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506107214}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.998363, y: 10.768048, z: 0.57667536}
+  m_Center: {x: -0.000038154798, y: -0.0000000018497182, z: 0.15274791}
 --- !u!1 &1510399464
 GameObject:
   m_ObjectHideFlags: 0
@@ -18774,6 +19388,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1002019515}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1925896654 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2268880910763465536, guid: 1ac7e1e218713a648961e6ca1933d9c9, type: 3}
+  m_PrefabInstance: {fileID: 1244714074}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1925896658
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925896654}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 9.621891, y: 14.8713255, z: 0.6216975}
+  m_Center: {x: 0.000030495992, y: -0.00009159645, z: 0.31087786}
+--- !u!114 &1925896659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925896654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bbe0ab7c265fb44dbe423a182d43e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteText: The crew are getting reckless, they're too caught up in their own conflicts
+    to realise it. I have a terrible feeling that something bad is going to happen,
+    they need to be more careful and focus. I do understand however, I'm not sure
+    if we should even keep going... The only reason I've not fallen into the clash
+    is because I must stay strong as the captain, otherwise we could face mutiny...
+    I'm unsure how much longer I can hold out though. What we are doing is not right.
+  notePanel: {fileID: 704764223}
+  noteTextUI: {fileID: 299820757}
+  escHintText: {fileID: 71781803}
 --- !u!1 &1937165595 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5b6809f1173a6cd40b6c648a3e9f2083, type: 3}
@@ -20554,6 +21215,51 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!1 &2122287351 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4628909190213162675, guid: d8e4c34110a9de343befb2c39a37d26b, type: 3}
+  m_PrefabInstance: {fileID: 1093799788}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2122287353
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122287351}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.998367, y: 10.768053, z: 0.5766786}
+  m_Center: {x: 0.0000076158417, y: 0.000038109123, z: 0.1527785}
+--- !u!114 &2122287354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122287351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bbe0ab7c265fb44dbe423a182d43e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteText: "I\u2019m getting a little worried... Everyone\u2019s fighting and no
+    one\u2019s paying attention to the\nthing we created. Some are wanting to go
+    as far as forcing the Captain to take the\nship back up to surface and abort
+    completely! Honestly, I don\u2019t blame them, I just "
+  notePanel: {fileID: 704764223}
+  noteTextUI: {fileID: 299820757}
+  escHintText: {fileID: 71781803}
 --- !u!1001 &2131208938
 PrefabInstance:
   m_ObjectHideFlags: 0
