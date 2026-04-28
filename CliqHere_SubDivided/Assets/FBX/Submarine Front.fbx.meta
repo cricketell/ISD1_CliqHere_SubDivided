@@ -3,7 +3,22 @@ guid: 80fe67b83b03cd64f9b219a71eff1324
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DarkCopper_MAT
+    second: {fileID: 2100000, guid: 72028f7c8abcab9458c9b6dbe74d8265, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass_MAT
+    second: {fileID: 2100000, guid: 7817fb353da1d2042b0f91c912a4cb6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #8
+    second: {fileID: 2100000, guid: d375a23e5f96a034895e59324e6b17b0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
