@@ -742,11 +742,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 704764224}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 222, y: 244}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 10, y: -31.25}
   m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &71781803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -777,7 +777,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0.19607845, g: 0.1254902, b: 0.7803922, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2487,8 +2487,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 398.21, y: 498.1}
+  m_AnchoredPosition: {x: 0, y: -5}
+  m_SizeDelta: {x: 180, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &299820757
 MonoBehaviour:
@@ -2537,8 +2537,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6170,9 +6170,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -813, y: -453}
-  m_SizeDelta: {x: 400, y: 500}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -100, y: -50}
+  m_SizeDelta: {x: 200, y: 300}
+  m_Pivot: {x: 1, y: 1}
 --- !u!114 &704764225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14272,14 +14272,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteText: "We\u2019ve already been frightened about that THING and now I hear someone
-    harping on\nabout it getting BIGGER?! We hadn\u2019t planned for this. Or rather,
-    we DID plan for this but\nnot this quickly. And we\u2019re supposed to be the
-    scientists. We shouldn\u2019t\u2019ve started this\nwhole thing in the first
-    place!! I can\u2019t take it anymore. Surrounded by these people who\nstill think
-    what we\u2019re doing is right?? We wanted to create the so called \u2018ultimate
-    life\nform\u2019 whatever that means... But we\u2019re just gonna end up losing
-    our own lives! Calling it\nnow whilst I\u2019m still sane enough to even consider
-    the morality of this whole wreck.\n\nWho do we think we are PLAYING GOD??"
+    harping on\nabout it getting BIGGER?! And we\u2019re supposed to be the scientists.
+    We shouldn\u2019t\u2019ve started this whole thing in the first place!! I can\u2019t
+    take it anymore. Surrounded by these people who still think what we\u2019re doing
+    is right?? We wanted to create the so called \u2018ultimate life form\u2019 whatever
+    that means... But we\u2019re just gonna end up losing our own lives! Calling
+    it now whilst I\u2019m still sane enough to even consider the morality of this
+    whole wreck.\n\nWho do we think we are PLAYING GOD??"
   notePanel: {fileID: 704764223}
   noteTextUI: {fileID: 299820757}
   escHintText: {fileID: 71781803}
@@ -14702,7 +14701,7 @@ GameObject:
   - component: {fileID: 1389892223}
   - component: {fileID: 1389892222}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Notes Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14757,7 +14756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
