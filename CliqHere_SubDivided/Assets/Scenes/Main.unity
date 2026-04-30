@@ -225,13 +225,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28202986}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.46931872, y: -0.5803359, z: -0.39130536, w: 0.5383589}
-  m_LocalPosition: {x: 1.1042888, y: 0.7310723, z: 0.54709625}
+  m_LocalRotation: {x: -0.30269048, y: -0.35522136, z: -0.5308092, w: 0.70741624}
+  m_LocalPosition: {x: 1.062, y: 0.905, z: 0.624}
   m_LocalScale: {x: 0.020651296, y: 0.0206513, z: 0.020651292}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1096635734}
-  m_LocalEulerAnglesHint: {x: -73.638, y: -113.893, z: 25.979}
+  m_LocalEulerAnglesHint: {x: -53.646, y: -17.803, z: -64.709}
 --- !u!65 &28202988
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4743,13 +4743,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543056991}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.37870958, y: -0.63103175, z: -0.51430017, w: 0.4403106}
-  m_LocalPosition: {x: 1.138, y: 0.75, z: 0.707}
+  m_LocalRotation: {x: -0.20821282, y: -0.4711196, z: -0.60379887, w: 0.60837555}
+  m_LocalPosition: {x: 1.088, y: 0.74, z: 0.69}
   m_LocalScale: {x: 0.020651296, y: 0.0206513, z: 0.020651292}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1096635734}
-  m_LocalEulerAnglesHint: {x: -79.29, y: -116.61, z: 7.747}
+  m_LocalEulerAnglesHint: {x: -55.312, y: -34.433, z: -71.121}
 --- !u!23 &543056993
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14998,15 +14998,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bbe0ab7c265fb44dbe423a182d43e5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteText: "want to get out. Everyone\u2019s getting on at each other, me included.
-    We\u2019ve been\ncouped up in this godforsaken submarine for far too long, and
-    now we have to share\nwith that too!? I want it gone. I want this whole mission
-    gone. It\u2019s not worth it...\nEveryone here is a bunch of frauds. We signed
-    up for this mission and I\u2019ll be damned\nif we don\u2019t finish it. We knew
-    what we were getting into, why back out now??\nForming a mini resistance are
-    you kidding me?? We\u2019re THIS close to fulfilling our\nduty and NOW you wanna
-    stop?! I\u2019ll keep going. If no one else will I\u2019ll be the one to\nmake
-    sure this Creature \u2013 My Creature \u2013 is a success."
+  noteText: "Everyone here is a bunch of frauds. We signed up for this mission and
+    I\u2019ll be damned\nif we don\u2019t finish it. We knew what we were getting
+    into, why back out now??\nForming a mini resistance are you kidding me?? We\u2019re
+    THIS close to fulfilling our\nduty and NOW you wanna stop?! I\u2019ll keep going.
+    If no one else will I\u2019ll be the one to\nmake sure this Creature \u2013 My
+    Creature \u2013 is a success."
   notePanel: {fileID: 704764223}
   noteTextUI: {fileID: 299820757}
   escHintText: {fileID: 71781803}
@@ -21384,7 +21381,10 @@ MonoBehaviour:
   noteText: "I\u2019m getting a little worried... Everyone\u2019s fighting and no
     one\u2019s paying attention to the\nthing we created. Some are wanting to go
     as far as forcing the Captain to take the\nship back up to surface and abort
-    completely! Honestly, I don\u2019t blame them, I just "
+    completely! Honestly, I don\u2019t blame them, I just want to get out. Everyone\u2019s
+    getting on at each other, me included. We\u2019ve been\ncouped up in this godforsaken
+    submarine for far too long, and now we have to share\nwith that too!? I want
+    it gone. I want this whole mission gone. It\u2019s not worth it..."
   notePanel: {fileID: 704764223}
   noteTextUI: {fileID: 299820757}
   escHintText: {fileID: 71781803}
